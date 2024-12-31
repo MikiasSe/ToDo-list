@@ -1,0 +1,111 @@
+* {
+    padding:0;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: flex-start;
+    background-size: cover;
+    background-position: center;
+    background:url(https://wallpapers.com/images/featured/navy-blue-6gi0afxm90qbd1i9.jpg)repeat;
+    background-size: cover;
+}
+h1{
+  
+    text-align: center;
+    color:skyblue;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.container{
+    min-width: 400px;
+    position: relative;
+    border: 2px solid rgba(255,255,255,.5);
+    border-radius:50px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    padding:20px;
+    padding-top: 30px;
+}
+#newtask input{
+   position: relative;
+   width: 77%;
+   height: 45px;
+   padding: 10px;
+   font-weight: 400px;
+   border: 2px solid rgba(255,255,255,.5);
+   border-radius: 50px;
+}
+#push {
+  width: 20%;
+    height: 45px;
+    float: right;
+    outline: none;
+    border:0.5px solid navy;
+    background-color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    color: navy;
+    border-radius: 50px;
+}
+#push:hover{
+    color: white;
+    background-color: navy;
+    transition: 0.3s ease;
+    cursor: pointer;
+  }
+#newtask input:focus{
+      outline: none;
+      border-color: navy;
+}
+ul li {
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    background-color: white;
+    border-radius: 20px;
+    margin: 5px;
+}
+
+ul li::after {
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 8px;
+    left: 8px;
+}
+
+ul li.checked {
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li.checked::after {
+    background-image: url(images/checked.png);
+}
+
+ul li span {
+    position: absolute;
+    right: 5px;
+    top: 2px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: black;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+ul li span:hover {
+    color: white;
+    background: navy;
+}
